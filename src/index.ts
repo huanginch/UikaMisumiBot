@@ -1,4 +1,4 @@
-import { GatewayIntentBits, Collection, SlashCommandBuilder } from "discord.js";
+import { GatewayIntentBits, Collection } from "discord.js";
 import { config } from "./config";
 // import { SlashCommand } from "./types";
 import { commands } from "./commands";
@@ -25,7 +25,7 @@ client.once("ready", async () => {
 
 client.on("interactionCreate", async interaction => {
   if (!interaction.isChatInputCommand()) return;
-  
+
   const customClient = interaction.client as CustomClient;
   const command = customClient.slashCommands.get(interaction.commandName);
 
