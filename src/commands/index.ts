@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 import { SlashCommand } from "../types";
-import { SlashCommandBuilder } from "discord.js";
 
 const foldersPath = path.join(__dirname, 'utilities');
 const importCommands = () => {
