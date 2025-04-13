@@ -165,6 +165,57 @@ client.on("messageCreate", async (message) => {
 
     await message.reply(selected);
   }
+
+  if (message.content === "定治") {
+    const replies = [
+      "我不能說...",
+      "他..."
+    ];
+
+    const selected = replies[Math.floor(Math.random() * replies.length)];
+
+    await message.reply(selected);
+  }
+
+  if (message.content === "甜甜圈") {
+    const replies = [
+      "甜甜圈...真奈很喜歡呢",
+    ];
+
+    const selected = replies[Math.floor(Math.random() * replies.length)];
+
+    await message.reply(selected);
+  }
+
+  if (message.content === "布丁") {
+    const replies = [
+      "小祥，你要吃布丁嗎?",
+    ];
+
+    const selected = replies[Math.floor(Math.random() * replies.length)];
+
+    await message.reply(selected);
+  }
+
+  if (message.content === "初音" || message.content === "三角初音") {
+    const replies = [
+      "這是我真正的名字...",
+    ];
+
+    const selected = replies[Math.floor(Math.random() * replies.length)];
+
+    await message.reply(selected);
+  }
+
+  if (message.content === "閣樓") {
+    const replies = [
+      "為了小祥，我的閣樓一直空著",
+    ];
+
+    const selected = replies[Math.floor(Math.random() * replies.length)];
+
+    await message.reply(selected);
+  }
 });
 
 client.login(config.DISCORD_TOKEN);
