@@ -24,11 +24,11 @@ commands.forEach((command) => {
 
 client.once("ready", async () => {
   console.log("Discord bot is ready! 🤖");
-  // for (const [guildId] of client.guilds.cache) {
-  //   await deployCommands({ guildId });
-  //   console.log(`Commands deployed to guild: ${guildId}`);
-  // }
-  await deployCommands({guildId: "767288097305657356"});
+  for (const [guildId] of client.guilds.cache) {
+    await deployCommands({ guildId });
+    console.log(`Commands deployed to guild: ${guildId}`);
+  }
+  // await deployCommands({guildId: "767288097305657356"});
 });
 
 client.on("interactionCreate", async (interaction) => {
@@ -60,8 +60,8 @@ client.on("interactionCreate", async (interaction) => {
   }
 });
 
-// const allowedChannelIds = ["767288097749598210", "1355749909323579483"]; //prod
-const allowedChannelIds = ["1098987435947458651"]; //dev
+const allowedChannelIds = ["767288097749598210", "1355749909323579483"]; //prod
+// const allowedChannelIds = ["1098987435947458651"]; //dev
 const replies: Reply[] = [];
 
 const commandsPath = path.join(__dirname, "replies");
