@@ -73,7 +73,7 @@ client.on("messageCreate", async (message) => {
     const replies = [
       "小祥小祥小祥小祥小祥小祥小祥!!!",
       "（陰暗的爬行）（尖叫）（扭曲）（陰暗的爬行）（尖叫）（扭曲）（陰暗的爬行）（尖叫）（爬行）（扭動）（分裂）（陰暗地蠕動）（翻滾）（激烈地爬動）（扭曲）（痙攣）（嘶吼）（蠕動）（陰森的低吼）（爬行）（分裂）（走上岸）（扭動）（痙攣）（蠕動）（扭曲的行走）（撲向小祥）",
-      "You know, I want, I want\nIwant, I want you, so I want, \nいなければよかったのになぜ \nyou know, you know\nYou know, you know I want you to know\nHow much I need you so, いま 狂おしいほど",
+      "You know, I want, I want\nI want, I want you, so\nI want, いなければよかったのに\nなぜ you know, you know\nYou know, you know I want you to know\nHow much I need you so, いま 狂おしいほど",
       "汪",
       {
         image: path.join(
