@@ -77,6 +77,7 @@ client.on("messageCreate", async (message) => {
       "（陰暗的爬行）（尖叫）（扭曲）（陰暗的爬行）（尖叫）（扭曲）（陰暗的爬行）（尖叫）（爬行）（扭動）（分裂）（陰暗地蠕動）（翻滾）（激烈地爬動）（扭曲）（痙攣）（嘶吼）（蠕動）（陰森的低吼）（爬行）（分裂）（走上岸）（扭動）（痙攣）（蠕動）（扭曲的行走）（撲向小祥）",
       "You know, I 汪, I 汪\nI want, I want you, so\nI want, いなければよかったのに\nなぜ you know, you know\nYou know, you know I want you to know\nHow much I need you so, いま 狂おしいほど",
       "汪",
+      "小祥說我和月亮一樣溫柔",
       {
         image: path.join(
           __dirname,
@@ -106,6 +107,7 @@ client.on("messageCreate", async (message) => {
   if (msgContent === "小睦" || msgContent === "睦") {
     const replies = [
       "不要把小祥從我身邊搶走!!!",
+      "是我們樂團的吉他手",
       {
         image: path.join(__dirname, "assets", "不要把小祥從我身邊搶走.gif"),
       },
@@ -137,7 +139,7 @@ client.on("messageCreate", async (message) => {
   }
 
   if (msgContent === "海鈴" || msgContent === "八幡海鈴") {
-    const replies = ["海鈴同學跟立希同學的感情好像很好呢"];
+    const replies = ["海鈴同學跟立希同學的感情好像很好呢", "是我們樂團的BASS手"];
     const randomReply = replies[Math.floor(Math.random() * replies.length)];
     await message.reply(randomReply);
   }
@@ -149,7 +151,7 @@ client.on("messageCreate", async (message) => {
   }
 
   if (msgContent === "喵夢" || msgContent === "祐天寺若麥") {
-    const replies = ["啊...擅自把我寫的歌詞..."];
+    const replies = ["啊...擅自把我寫的歌詞...", "是我們樂團的鼓手"];
     const randomReply = replies[Math.floor(Math.random() * replies.length)];
     await message.reply(randomReply);
   }
@@ -240,6 +242,14 @@ client.on("messageCreate", async (message) => {
     await message.reply(selected);
   }
 
+  if (msgContent === "星星") {
+    const replies = ["我很喜歡星星", "織女星，牛郎星，獵戶座，夏季大三角"];
+
+    const selected = replies[Math.floor(Math.random() * replies.length)];
+
+    await message.reply(selected);
+  }
+
   if (msgContent === "crychic") {
     const replies = ["好忌妒，小燈"];
 
@@ -268,6 +278,24 @@ client.on("messageCreate", async (message) => {
 
   if (msgContent === "doloris") {
     const replies = ["這是小祥賜給我的名字"];
+    const randomReply = replies[Math.floor(Math.random() * replies.length)];
+    await message.reply(randomReply);
+  }
+
+  if (msgContent === "amoris") {
+    const replies = ["是我們樂團的鼓手"];
+    const randomReply = replies[Math.floor(Math.random() * replies.length)];
+    await message.reply(randomReply);
+  }
+
+  if (msgContent === "timoris") {
+    const replies = ["是我們樂團的BASS手"];
+    const randomReply = replies[Math.floor(Math.random() * replies.length)];
+    await message.reply(randomReply);
+  }
+
+  if (msgContent === "mortis") {
+    const replies = ["是我們樂團的吉他手，但他卻說他不會彈吉他"];
     const randomReply = replies[Math.floor(Math.random() * replies.length)];
     await message.reply(randomReply);
   }
