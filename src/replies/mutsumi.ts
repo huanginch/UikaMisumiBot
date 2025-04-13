@@ -8,7 +8,7 @@ const replies = [
   "不要把小祥從我身邊搶走!!!",
   "是我們樂團的吉他手",
   {
-    image: path.join(__dirname, "assets", "不要把小祥從我身邊搶走.gif"),
+    image: path.join(__dirname, "../assets", "不要把小祥從我身邊搶走.gif"),
   },
 ];
 
