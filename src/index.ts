@@ -69,7 +69,7 @@ client.on("messageCreate", async (message) => {
   if (!allowedChannelIds.includes(message.channel.id)) return;
 
   // Example command: !hello
-  if (message.content === "小祥") {
+  if (message.content === "小祥" || message.content === "祥") {
     const replies = [
       "小祥小祥小祥小祥小祥小祥小祥!!!",
       "（陰暗的爬行）（尖叫）（扭曲）（陰暗的爬行）（尖叫）（扭曲）（陰暗的爬行）（尖叫）（爬行）（扭動）（分裂）（陰暗地蠕動）（翻滾）（激烈地爬動）（扭曲）（痙攣）（嘶吼）（蠕動）（陰森的低吼）（爬行）（分裂）（走上岸）（扭動）（痙攣）（蠕動）（扭曲的行走）（撲向小祥）",
@@ -154,6 +154,16 @@ client.on("messageCreate", async (message) => {
     } else if (selected.image) {
       await message.reply({ files: [selected.image] });
     }
+  }
+
+  if (message.content === "晚安" || message.content === "晚安初華" || message.content === "晚安初華大人") {
+    const replies = [
+      "晚安Sumimi",
+    ];
+
+    const selected = replies[Math.floor(Math.random() * replies.length)];
+
+    await message.reply(selected);
   }
 });
 
