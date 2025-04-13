@@ -136,8 +136,26 @@ client.on("messageCreate", async (message) => {
     }
   }
 
+  if (msgContent === "海鈴" || msgContent === "八幡海鈴") {
+    const replies = ["海鈴同學跟立希同學的感情好像很好呢"];
+    const randomReply = replies[Math.floor(Math.random() * replies.length)];
+    await message.reply(randomReply);
+  }
+
+  if (msgContent === "立希" || msgContent === "椎名立希") {
+    const replies = ["立希同學...是crychic裡的那個鼓手呢", "上次打斷他和海鈴同學說話，有點不太好意思"];
+    const randomReply = replies[Math.floor(Math.random() * replies.length)];
+    await message.reply(randomReply);
+  }
+
+  if (msgContent === "喵夢" || msgContent === "祐天寺若麥") {
+    const replies = ["啊...擅自把我寫的歌詞..."];
+    const randomReply = replies[Math.floor(Math.random() * replies.length)];
+    await message.reply(randomReply);
+  }
+
   if (msgContent === "真奈") {
-    const replies = ["..."];
+    const replies = ["...", "說到真奈就會想到甜甜圈呢"];
     const randomReply = replies[Math.floor(Math.random() * replies.length)];
     await message.reply(randomReply);
   }
@@ -234,6 +252,7 @@ client.on("messageCreate", async (message) => {
     const replies = [
       "小祥可以邀請我，真的好開心",
       "我想和小祥在一起的願望，已經實現了",
+      "https://www.youtube.com/watch?v=QDsd0nyzwz0"
     ];
 
     const selected = replies[Math.floor(Math.random() * replies.length)];
@@ -251,6 +270,18 @@ client.on("messageCreate", async (message) => {
     const replies = ["這是小祥賜給我的名字"];
     const randomReply = replies[Math.floor(Math.random() * replies.length)];
     await message.reply(randomReply);
+  }
+
+  if (msgContent === "killkiss") {
+    const replies = [
+      "多麼可笑...",
+      "https://youtu.be/FWXkipC-vqs?si=1iyiQOBdMvIs4SSp",
+      "https://www.youtube.com/watch?v=W0DCsoJPCa8"
+    ];
+
+    const selected = replies[Math.floor(Math.random() * replies.length)];
+
+    await message.reply(selected);
   }
 
   if (msgContent === "天球" || msgContent === "天球 (そら) のMúsica") {
@@ -279,6 +310,19 @@ client.on("messageCreate", async (message) => {
     const replies = [
       "https://youtu.be/QtWdokSWYpo?si=BkitHw5gHVKAi4RM",
       "赤紅的象，獅子，熊，go-go insane"
+    ];
+
+    const selected = replies[Math.floor(Math.random() * replies.length)];
+
+    await message.reply(selected);
+  }
+
+  if (msgContent === "imprisoned xii" ) {
+    const replies = [
+      "這是我寫給小祥的歌",
+      "謝謝小祥用這麼溫柔的曲子接住我",
+      "https://youtu.be/0YNMV7xljD4?si=MK3xrLfhFjQR6O8l",
+      "https://youtu.be/1_0LTMNKYGo?si=0er0a7UkFFyvw0V8"
     ];
 
     const selected = replies[Math.floor(Math.random() * replies.length)];
