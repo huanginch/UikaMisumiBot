@@ -2,7 +2,7 @@ import path from "path";
 import { Message } from "discord.js";
 import { sendReply } from "../utils/replyHelper";
 
-const keywords = ["星星"];
+const keywords = ["星星", "夏季大三角"];
 
 const replies = [
   "我很喜歡星星，這是我唯一和小祥的回憶",

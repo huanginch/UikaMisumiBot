@@ -2,12 +2,11 @@ import path from "path";
 import { Message } from "discord.js";
 import { sendReply } from "../utils/replyHelper";
 
-const keywords = ["初華", "三角初華"];
+const keywords = ["豐川", "豐川家"];
 
 const replies = [
-  "你好，我是Sumimi的初華",
-  "初華...對，我叫三角初華",
-  "真正的初華其實是我妹妹，我奪走了他的名字與夢想",
+  "我不能說...",
+  "小時候母親總是叮嚀我不能靠近豐川家的大宅，但我也是在那裡遇見了小祥"
 ];
 
 export default {
