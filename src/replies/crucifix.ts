@@ -2,9 +2,9 @@ import path from "path";
 import { Message } from "discord.js";
 import { sendReply } from "../utils/replyHelper";
 
-const keywords = ["顏"];
+const keywords = ["crucifix x", "crucifixx"];
 
-const replies = ["https://youtu.be/6umH5XQpXws?si=GqmbT4bPrtCHELuV", "嘖", "不覺得海鈴同學屁股的鏡頭有點多嗎?"];
+const replies = ["still alive", "https://youtu.be/XP8al1l38Po?si=CXDUc5BcPuLrRCkw", "https://youtu.be/v-dKrhA6_i0?si=HUJOPt9Uy3ArmKJr"];
 
 export default {
   keywords,
