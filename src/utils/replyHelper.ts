@@ -1,4 +1,4 @@
-import { Message } from "discord.js";
+import { Message, MessageReplyOptions } from "discord.js";
 
 type Reply = string | { image: string; timeout?: boolean | number } | { text: string; timeout?: boolean | number };;
 
@@ -34,9 +34,15 @@ export async function sendReply(message: Message, replies: Reply[]) {
   // Send the reply
   if (typeof selected === "string") {
     await message.reply(selected);
-  } else if ("image" in selected) {
-    await message.reply({ files: [selected.image] });
-  } else if ("text" in selected) {
-    await message.reply(selected.text);
+  } else {
+    let reply: MessageReplyOptions = {};
+    if ("text" in selected) {
+      reply.content = selected.text;
+    }
+    if ("image" in selected) {
+      reply.files = [selected.image];
+    } 
+    await message.reply(reply);
   }
+ 
 }
