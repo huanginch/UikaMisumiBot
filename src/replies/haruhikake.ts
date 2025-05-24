@@ -1,12 +1,11 @@
-import path from "path";
 import { Message } from "discord.js";
 import { sendReply } from "../utils/replyHelper";
 
-const keywords = ["八芒星ダンス", "八芒星"];
+const keywords = ["春日影"];
 
 const replies = [
-  { text: "https://youtu.be/tevtnb427Mw?si=9xJjtLamrdDhKG_q" },
-  { text: "赤紅的象，獅子，熊，go-go insane" },
+  { text: "他現在是mygo的歌了，不是crychic的，太好了\nhttps://youtu.be/ZsvJUh03MwI?si=PZuZONXtt6GlhGLa" },
+  {text: "..."}
 ];
 
 export default {

@@ -4,7 +4,9 @@ import { sendReply } from "../utils/replyHelper";
 
 const keywords = ["蜘蛛人"];
 
-const replies = ["https://x.com/sasakirico/status/1906922515408269605"];
+const replies = [
+  { text: "https://x.com/sasakirico/status/1906922515408269605" },
+];
 
 export default {
   keywords,

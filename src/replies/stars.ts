@@ -5,8 +5,8 @@ import { sendReply } from "../utils/replyHelper";
 const keywords = ["星星", "夏季大三角"];
 
 const replies = [
-  "我很喜歡星星，這是我唯一和小祥的回憶",
-  "織女星，牛郎星，獵戶座，夏季大三角",
+  { text: "我很喜歡星星，這是我唯一和小祥的回憶" },
+  { text: "織女星，牛郎星，獵戶座，夏季大三角" },
 ];
 
 export default {

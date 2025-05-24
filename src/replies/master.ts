@@ -5,7 +5,7 @@ import { sendReply } from "../utils/replyHelper";
 const keywords = ["主人", "初華大人"];
 
 const replies = [
-  "嘖",
+  { text: "嘖" },
   {
     image: path.join(
       __dirname,

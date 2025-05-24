@@ -4,9 +4,7 @@ import { sendReply } from "../utils/replyHelper";
 
 const keywords = ["晚安", "晚安初華", "晚安初華大人"];
 
-const replies = [
-    "晚安Sumimi"
-];
+const replies = [{ text: "晚安Sumimi" }];
 
 export default {
   keywords,

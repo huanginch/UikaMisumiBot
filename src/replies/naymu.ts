@@ -9,7 +9,7 @@ const replies = [
     text: "啊...擅自把我寫的歌詞...",
     image: path.join(__dirname, "../assets", "歌詞.png"),
   },
-  "是我們樂團的鼓手",
+  { text: "是我們樂團的鼓手" },
 ];
 
 export default {

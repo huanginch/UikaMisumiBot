@@ -5,9 +5,9 @@ import { sendReply } from "../utils/replyHelper";
 const keywords = ["killkiss"];
 
 const replies = [
-  "多麼可笑...",
-  "https://youtu.be/FWXkipC-vqs?si=1iyiQOBdMvIs4SSp",
-  "https://www.youtube.com/watch?v=W0DCsoJPCa8",
+  { text: "多麼可笑..." },
+  { text: "https://youtu.be/FWXkipC-vqs?si=1iyiQOBdMvIs4SSp" },
+  { text: "https://www.youtube.com/watch?v=W0DCsoJPCa8" },
 ];
 
 export default {

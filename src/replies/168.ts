@@ -4,9 +4,7 @@ import { sendReply } from "../utils/replyHelper";
 
 const keywords = ["清告"];
 
-const replies = [
-    "我記得這個人，他是小祥的爸爸"
-];
+const replies = [{ text: "我記得這個人，他是小祥的爸爸" }];
 
 export default {
   keywords,

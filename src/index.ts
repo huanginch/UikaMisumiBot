@@ -84,7 +84,7 @@ client.on("messageCreate", async (message) => {
   const content = message.content.toLowerCase();
 
   for (const reply of replies) {
-    if (reply.keywords.some(k => k === content)) {
+    if (reply.keywords.some(k =>  typeof k === "string" ? k === content : (k as RegExp).test(content))) {
       await reply.execute(message);
       break;
     }

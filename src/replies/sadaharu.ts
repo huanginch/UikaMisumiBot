@@ -4,7 +4,7 @@ import { sendReply } from "../utils/replyHelper";
 
 const keywords = ["定治"];
 
-const replies = ["我不能說...", "他..."];
+const replies = [{ text: "我不能說..." }, { text: "他..." }];
 
 export default {
   keywords,

@@ -5,15 +5,11 @@ import { sendReply } from "../utils/replyHelper";
 const keywords = ["obilivionis"];
 
 const replies = [
-  "全都給你",
-  "請讓我遺忘吧...",
-  "小祥...❤️",
+  { text: "全都給你" },
+  { text: "請讓我遺忘吧..." },
+  { text: "小祥...❤️" },
   {
-    image: path.join(
-      __dirname,
-      "../assets",
-      "allgivetoyou.png"
-    ),
+    image: path.join(__dirname, "../assets", "allgivetoyou.png"),
   },
 ];
 

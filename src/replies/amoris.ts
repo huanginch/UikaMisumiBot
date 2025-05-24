@@ -4,9 +4,7 @@ import { sendReply } from "../utils/replyHelper";
 
 const keywords = ["amoris"];
 
-const replies = [
-  "是我們樂團的鼓手"
-];
+const replies = [{ text: "是我們樂團的鼓手" }];
 
 export default {
   keywords,
